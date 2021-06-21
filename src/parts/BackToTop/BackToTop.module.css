@@ -1,0 +1,19 @@
+.btn {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+@media screen and  (max-width: 768px) {
+    .backToTop {
+        display: none;
+    }
+}

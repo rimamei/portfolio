@@ -1,0 +1,10 @@
+.typing {
+    margin: 0 150px 150px;
+    text-align: center;
+}
+
+@media screen and  (max-width: 768px) {
+    .typing {
+        margin: 0 50px 100px;
+    }
+}

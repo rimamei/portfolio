@@ -1,0 +1,52 @@
+.contact {
+    padding-bottom: 50px;
+}
+
+.contactWrapper {
+    align-items: start;
+    margin: 0 150px;
+}
+
+.fontTitle {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.left {
+    flex-grow: 1;
+}
+
+.right {
+    flex-grow: 1;
+    color: rgba(179, 130, 176, 0.8);
+    font-size: 70px;
+}
+
+
+.icon {
+    margin: 10px;
+}
+
+@media screen and  (max-width: 768px) {
+
+    .contactWrapper {
+        display: block;
+        flex-direction: column;
+        height: auto;
+        margin: 0 50px;
+    }
+
+    .fontTitle {
+        margin-bottom: 20px;
+    }
+
+    .left {
+        margin: 0 auto;
+    }
+
+    .right {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+}

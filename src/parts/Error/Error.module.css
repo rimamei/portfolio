@@ -1,0 +1,13 @@
+.loading {
+    color: rgba(235, 12, 12, 0.8);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.times {
+    animation: spin infinite 5s linear;
+    margin-bottom: 20px;
+  }

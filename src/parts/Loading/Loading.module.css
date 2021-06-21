@@ -1,0 +1,21 @@
+.loading {
+    color: rgba(179, 130, 176, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    animation: spin infinite 5s linear;
+    margin-bottom: 20px;
+  }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

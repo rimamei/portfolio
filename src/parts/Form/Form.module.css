@@ -1,0 +1,9 @@
+.formGroup {
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btnContact {
+    border-radius: 10px;
+}
