@@ -7,3 +7,8 @@
 .btnContact {
     border-radius: 10px;
 }
+
+input,
+textarea {
+    cursor: pointer;
+}

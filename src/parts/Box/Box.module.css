@@ -10,7 +10,7 @@
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: turn 10s linear infinite;
+    animation: turn 20s linear infinite;
 }
 
 .img {
