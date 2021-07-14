@@ -27,6 +27,7 @@
     width: 400px;
     object-fit: cover;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .right {
