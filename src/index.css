@@ -123,6 +123,10 @@ p {
   border-bottom: 1px solid #dadada;
 }
 
+.mr-16 {
+  margin-right: 16px;
+}
+
 @media screen and  (max-width:768px) {
   h1 {
     font-size: 24px;

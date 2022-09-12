@@ -30,7 +30,7 @@ const About = () => {
               offset={-70}
             >
               <button className={`button ${styles.btnabout}`}>
-                Available for Hire
+                Contact Me
               </button>
             </Link>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Contact, Footer, Header, Project } from "../components";
+import { About, Contact, Footer, Header, Project, WorkExperience } from "../components";
 import { BackToTop, Box, Typing } from "../parts";
 import { Element } from "react-scroll";
 
@@ -16,6 +16,9 @@ const Home = () => {
       </Element>
       <Element name="project">
         <Project />
+      </Element>
+      <Element name="experience">
+        <WorkExperience />
       </Element>
       <Element name="contact">
         <Contact />
