@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <p>
-        &copy; 2021. Built By Rima Mei Handayani. 2D Animation by{" "}
+        &copy; 2022. Built By Rima Mei Handayani. 2D Animation by{" "}
         <a className={styles.link} href="http://freepik.com" target="_blank" rel="noopener noreferrer">
           Freepik
         </a>

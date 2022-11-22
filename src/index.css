@@ -31,14 +31,14 @@ ul {
   list-style: none;
 }
 
-ul>a>li {
+ul > a > li {
   padding: 5px 15px;
   margin: 5px;
   cursor: pointer;
   transition: 0.5s;
 }
 
-ul>a>li:hover {
+ul > a > li:hover {
   background-color: rgba(179, 130, 176, 0.5);
   border-radius: 10px;
   color: #4b4a4a;
@@ -64,16 +64,17 @@ input,
 textarea {
   background-color: rgba(223, 221, 222, 0.4);
   border-radius: 5px;
-  border:1px solid rgba(223, 221, 222, 0.8);
+  border: 1px solid rgba(223, 221, 222, 0.8);
   box-shadow: 1px 2px 5px 1px #cfcece;
   outline: none;
   padding: 10px;
   width: 100%;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   background-color: rgba(223, 221, 222, 0.1);
-  border:1px solid rgba(179, 130, 176, 0.8);
+  border: 1px solid rgba(179, 130, 176, 0.8);
   box-shadow: 1px 2px 5px 1px rgba(179, 130, 176, 0.8);
 }
 
@@ -126,8 +127,11 @@ p {
 .bg-transparent {
   mix-blend-mode: multiply;
 }
+.mr-16 {
+  margin-right: 16px;
+}
 
-@media screen and  (max-width:768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
   }
