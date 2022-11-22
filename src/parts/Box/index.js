@@ -1,24 +1,43 @@
-import React from "react";
-import styles from "./Box.module.css";
+import React from 'react';
+import styles from './Box.module.css';
 
 const Box = () => {
+  const data = [
+    {
+      img: '/images/ui-ux.jpg',
+      name: 'uiux',
+      position: 'front',
+    },
+    {
+      img: '/images/reactjs.jpg',
+      name: 'reactjs',
+      position: 'back',
+    },
+    {
+      img: '/images/frontend.jpg',
+      name: 'frontend',
+      position: 'left',
+    },
+    {
+      img: '/images/figma.jpg',
+      name: 'figma',
+      position: 'right',
+    },
+  ];
   return (
     <div className={styles.box}>
       <div className={styles.cube}>
-        <div className={`${styles.face} ${styles.top}`}></div>
-        <div className={`${styles.face} ${styles.bottom}`}></div>
-        <div className={`${styles.face} ${styles.front}`}>
-          <img src="/images/ui-ux.png" alt="ui-ux" className={styles.img} />
-        </div>
-        <div className={`${styles.face} ${styles.back}`}>
-          <img src="/images/reactjs.png" alt="react" className={styles.img} />
-        </div>
-        <div className={`${styles.face} ${styles.left}`}>
-          <img src="/images/frontend.png" alt="frontend" className={styles.img} />
-        </div>
-        <div className={`${styles.face} ${styles.right}`}>
-          <img src="/images/figma.png" alt="react" className={styles.img} />
-        </div>
+        <div className={`${styles.face} ${styles.top}`} />
+        <div className={`${styles.face} ${styles.bottom}`} />
+        {data.map((item, index) => (
+          <div className={`${styles.face} ${styles[item.position]}`} key={index}>
+            <img
+              src={item.img}
+              alt={item.name}
+              className={`bg-transparent ${styles.img}`}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
