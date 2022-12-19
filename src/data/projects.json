@@ -1,0 +1,89 @@
+[
+  {
+    "_id": "607f6f7f5aa1802cb00e7915",
+    "tagId": [
+      {
+        "_id": "607f5e51e1433730bc0240b5"
+      },
+      {
+        "_id": "607f5e69e1433730bc0240b6"
+      },
+      {
+        "_id": "607f5e6fe1433730bc0240b7"
+      },
+      {
+        "_id": "607f5e7ee1433730bc0240b9"
+      },
+      {
+        "_id": "607f5e76e1433730bc0240b8"
+      },
+      {
+        "_id": "607f5e89e1433730bc0240ba"
+      },
+      {
+        "_id": "607f5e8fe1433730bc0240bb"
+      },
+      {
+        "_id": "607f5e97e1433730bc0240bc"
+      },
+      {
+        "_id": "607f615fe1433730bc0240bf"
+      }
+    ],
+    "title": "Staycation",
+    "description": "Staycation is a booking website built with MERN Stack. It includes API Route, Admin page with EJS, and frontend for web booking app.",
+    "image": "/images/staycation.jpg",
+    "link": "https://staycation-121.netlify.app/"
+  },
+  {
+    "_id": "607f70875aa1802cb00e7917",
+    "tagId": [
+      {
+        "_id": "607f5e7ee1433730bc0240b9"
+      }
+    ],
+    "title": "Weather App - PWA",
+    "description": "Weather App is an PWA app website built with ReactJS. A progressive web application (PWA) is a type of application software delivered through the web, built using common web technologies including HTML, CSS, and JavaScript.",
+    "image": "/images/weatherapp.jpg",
+    "link": "https://weather-app-rimamei.netlify.app/"
+  },
+  {
+    "_id": "607f70f95aa1802cb00e7919",
+    "tagId": [
+      {
+        "_id": "607f5e76e1433730bc0240b8"
+      },
+      {
+        "_id": "607f5e7ee1433730bc0240b9"
+      },
+      {
+        "_id": "607f5e89e1433730bc0240ba"
+      },
+      {
+        "_id": "607f5e8fe1433730bc0240bb"
+      },
+      {
+        "_id": "607f5ea2e1433730bc0240bd"
+      }
+    ],
+    "title": "Tokopedia - Redesign Landing Page",
+    "description": "Tokopedia is one of the top ecommerce in Indonesia. This is a raw design which I emphasize the real time trending section. The real time trending is inspired by Melon which is the top music platform in South Korea.",
+    "image": "/images/tokopedia.jpg",
+    "link": "https://github.com/rimamei/tokopedia-clone"
+  },
+  {
+    "_id": "61d718103762d9c9b666043b",
+    "tagId": [
+      {
+        "_id": "607f5e7ee1433730bc0240b9"
+      },
+      {
+        "_id": "607f5f02e1433730bc0240be"
+      }
+    ],
+    "title": "Studext",
+    "description": "Studext is educational platform which combine ecommerce system with learning management system.  It contains paid course, webinar, olympiad, and tryout.",
+    "image": "/images/studext.jpg",
+    "link": "https://www.studext.id/"
+  }
+]

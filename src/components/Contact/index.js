@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import * as Fa from "react-icons/fa";
-import { Form } from "../../parts";
+// import { Form } from "../../parts";
 import styles from "./Contact.module.css";
 
 const Contact = () => {
@@ -9,9 +9,9 @@ const Contact = () => {
     <section className={`line ${styles.contact}`}>
       <h1 className={`font-section ${styles.fontTitle}`}>Contact</h1>
       <div className={`flex-between ${styles.contactWrapper}`}>
-        <div className={styles.left}>
+        {/* <div className={styles.left}>
           <Form />
-        </div>
+        </div> */}
         <div className={`flex-column ${styles.right}`}>
           <div className={`flex-center`}>
             <Link

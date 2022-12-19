@@ -1,44 +1,53 @@
-import { Link } from "react-router-dom";
-import styles from "./Project.module.css";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Loading, Error } from "../../parts";
-import { SRLWrapper } from "simple-react-lightbox";
+import { Link } from 'react-router-dom';
+import styles from './Project.module.css';
+// import { useEffect, useState } from 'react';
+// import axios from 'axios';
+// import { Loading, Error } from '../../parts';
+import { SRLWrapper } from 'simple-react-lightbox';
+import ProjectList from '../../data/projects.json';
+import Tag from '../../data/tags.json';
 
 const Project = () => {
-  const [project, setProject] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  // const [project, setProject] = useState([]);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(false);
 
-  useEffect(() => {
-    const fetch = async () => {
-      try {
-        setLoading(true);
-        let { data } = await axios.get(
-          `${process.env.REACT_APP_URL}/api/v1/project`
-        );
-        setLoading(false);
-        setProject(data.data);
-      } catch (err) {
-        setLoading(false);
-        setError(err.message);
-      }
-    };
+  // useEffect(() => {
+  //   const fetch = async () => {
+  //     try {
+  //       setLoading(true);
+  //       let { data } = await axios.get(
+  //         `${process.env.REACT_APP_URL}/api/v1/project`
+  //       );
+  //       setLoading(false);
+  //       setProject(data.data);
+  //     } catch (err) {
+  //       setLoading(false);
+  //       setError(err.message);
+  //     }
+  //   };
 
-    fetch();
-  }, []);
+  //   fetch();
+  // }, []);
 
   return (
     <section className={styles.projects}>
       <div className={styles.title}>
         <h1 className="font-section">MY PROJECT</h1>
       </div>
-      {loading ? (
+      {/* {loading ? (
         <Loading />
       ) : error ? (
         <Error>{error}</Error>
-      ) : (
-        project.map((item) => (
+      ) : ( */}
+      {ProjectList.map((item) => {
+        const filterTag = Tag.filter((el) => {
+          return item.tagId.some((v) => {
+            return el._id === v._id;
+          });
+        });
+
+        return (
           <div className={`flex-evenly ${styles.project}`} key={item._id}>
             <div className={styles.left}>
               <SRLWrapper>
@@ -62,7 +71,7 @@ const Project = () => {
                 </div>
               </div>
               <div className={styles.tag}>
-                {item.tagId.map((itemTag) => (
+                {filterTag.map((itemTag) => (
                   <button key={itemTag._id} className={styles.btnProject}>
                     {itemTag.name}
                   </button>
@@ -70,8 +79,8 @@ const Project = () => {
               </div>
             </div>
           </div>
-        ))
-      )}
+        );
+      })}
     </section>
   );
 };

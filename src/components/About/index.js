@@ -30,9 +30,7 @@ const About = () => {
             duration={576}
             offset={-70}
           >
-            <button className={`button ${styles.btnabout}`}>
-              Available for Hire
-            </button>
+            <button className={`button ${styles.btnabout}`}>Contact Me</button>
           </Link>
         </div>
       </div>
