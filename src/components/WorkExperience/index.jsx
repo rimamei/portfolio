@@ -1,21 +1,16 @@
-import { Link } from "react-router-dom";
-import styles from "./WorkExperience.module.css";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Loading, Error } from "../../parts";
-import { SRLWrapper } from "simple-react-lightbox";
+import styles from './WorkExperience.module.css';
 
 const Project = () => {
   const experience = [
     {
-      title: "Frontend Developer",
-      place: "Studext, PT Telkom Indonesia",
-      year: "Aug 2021 - Jan 2022",
+      title: 'Frontend Developer',
+      place: 'Studext, PT Telkom Indonesia',
+      year: 'Aug 2021 - Jan 2022',
     },
     {
-      title: "Frontend Developer",
-      place: "Inpoin, PT Telkom Indonesia",
-      year: "Feb 2021 - Present",
+      title: 'Frontend Developer',
+      place: 'Inpoin, PT Telkom Indonesia',
+      year: 'Feb 2021 - Present',
     },
   ];
 
@@ -26,7 +21,7 @@ const Project = () => {
       </div>
       <ul className={styles.list}>
         {experience.map((v, index) => (
-          <li className={styles.li}>
+          <li key={index} className={styles.li}>
             <div className={styles.animation}>
               <div
                 className={

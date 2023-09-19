@@ -3,7 +3,6 @@ import styles from './Project.module.css';
 // import { useEffect, useState } from 'react';
 // import axios from 'axios';
 // import { Loading, Error } from '../../parts';
-import { SRLWrapper } from 'simple-react-lightbox';
 import ProjectList from '../../data/projects.json';
 import Tag from '../../data/tags.json';
 
@@ -50,9 +49,9 @@ const Project = () => {
         return (
           <div className={`flex-evenly ${styles.project}`} key={item._id}>
             <div className={styles.left}>
-              <SRLWrapper>
-                <img className={styles.img} src={item.image} alt={item.title} />
-              </SRLWrapper>
+              {/* <SRLWrapper> */}
+              <img className={styles.img} src={item.image} alt={item.title} />
+              {/* </SRLWrapper> */}
             </div>
             <div className={styles.right}>
               <div>
