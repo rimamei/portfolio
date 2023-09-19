@@ -1,25 +1,24 @@
-import React from 'react';
 import styles from './Box.module.css';
 
 const Box = () => {
   const data = [
     {
-      img: '/images/ui-ux.jpg',
+      img: '/images/ui-ux.png',
       name: 'uiux',
       position: 'front',
     },
     {
-      img: '/images/reactjs.jpg',
+      img: '/images/reactjs.png',
       name: 'reactjs',
       position: 'back',
     },
     {
-      img: '/images/frontend.jpg',
+      img: '/images/frontend.png',
       name: 'frontend',
       position: 'left',
     },
     {
-      img: '/images/figma.jpg',
+      img: '/images/figma.png',
       name: 'figma',
       position: 'right',
     },
@@ -30,7 +29,10 @@ const Box = () => {
         <div className={`${styles.face} ${styles.top}`} />
         <div className={`${styles.face} ${styles.bottom}`} />
         {data.map((item, index) => (
-          <div className={`${styles.face} ${styles[item.position]}`} key={index}>
+          <div
+            className={`${styles.face} ${styles[item.position]}`}
+            key={index}
+          >
             <img
               src={item.img}
               alt={item.name}
