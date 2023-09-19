@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './About.module.css';
 import { Link } from 'react-scroll';
 
@@ -17,11 +16,11 @@ const About = () => {
         </div>
         <div className={styles.right}>
           <p className={styles.p}>
-            My name is Rima Mei Handayani. An Indonesia based frontend
-            developer. Despite being a Frontend Developer, I also have knowledge
-            in UI/UX and backend. Designing website and turn it into a real
-            website that anyone can use easily makes me really happy. I always
-            strive for clean design and clean code.
+            Hello there! I&apos;m a frontend developer based in Indonesia. I
+            specialize in creating production-ready websites with tools like
+            ReactJS and NextJS, also applying unit testing. Beyond frontend, I
+            also possess knowledge in backend, UI/UX, and Docker. Let&apos;s
+            collaborate to bring your digital vision to life! 🌟
           </p>
           <Link
             to="contact"
